@@ -10,10 +10,10 @@ api = Api(app)
 def bkl_website():
     return redirect("https://gonekrabbing.supply/logistics/" , code=301)
 
-@app.route("/docs")
+@app.route("/api/docs")
 def github():
     return redirect("https://github.com/nonedead/bkl-api" , code=301)
-    
+
 class Restrictions(Resource):
     def get(self):
         cargo_limit = 340000
