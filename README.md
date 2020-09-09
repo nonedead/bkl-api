@@ -24,7 +24,7 @@ Response:
             	"R10-GN – B E A N S T A R",
             ]
         },
-                {
+        {
         	"system": "PNQY-Y",
             "stations": 
             [
@@ -72,6 +72,7 @@ Not Found(`404`):
 {
 	"message": "system not serviced",
     "data": {}
+}
 ```
 
 ### Get collateral and volume restrictions
