@@ -14,18 +14,18 @@ Response:
 
 ```json
 {
-	"message": "success",
+    "message": "success",
     "data": 
     [
         {
-        	"system": "R10-GN",
+            "system": "R10-GN",
             "stations": 
             [
             	"R10-GN – B E A N S T A R",
             ]
         },
         {
-        	"system": "PNQY-Y",
+            "system": "PNQY-Y",
             "stations": 
             [
                 "PNQY-Y – PPG Paints Arena"
@@ -51,7 +51,7 @@ Success(`200`):
 
 ```json
 {
-	"message": "success",
+    "message": "success",
     "data": 
     {
         "system_name": "PNQY-Y",
@@ -70,7 +70,7 @@ Not Found(`404`):
 
 ```json
 {
-	"message": "system not serviced",
+    "message": "system not serviced",
     "data": {}
 }
 ```
@@ -87,7 +87,7 @@ Success(`200`)
 
 ```json
 {
-	"message":"success",
+    "message":"success",
     "data": 
     {
     	"volume_limit": 345000,
@@ -117,7 +117,7 @@ Success(`200`):
 
 ```json
 {
-	"message": "success",
+    "message": "success",
     "data": 
     {
     	"corp": "Black Krab Logistics",
@@ -138,7 +138,7 @@ Precondition Failed(`412`): Collateral Over Limit
 
 ```json
 {
-	"message": "collateral not acceptable",
+    "message": "collateral not acceptable",
     "data": 
     {
     	"collateral": "limit: 15000000000000",
@@ -151,7 +151,7 @@ Precondition Failed(`412`): Volume Over Limit
 
 ```json
 {
-	"message": "volume not acceptable",
+    "message": "volume not acceptable",
     "data": 
     {
     	"collateral": "ok",
@@ -164,7 +164,7 @@ Precondition Failed(`412`): Both Over Limit
 
 ```json
 {
-	"message": "both not acceptable",
+    "message": "both not acceptable",
     "data": 
     {
     	"collateral": "limit: 15000000000000",
@@ -177,7 +177,7 @@ Not Acceptable(`406`):
 
 ```json
 {
-	"message": "system not serviced",
+    "message": "system not serviced",
     "data": 
     {
     	"origin": "Jita",
