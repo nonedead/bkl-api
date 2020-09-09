@@ -1,11 +1,19 @@
 from flask import Flask
 from flask_restful import Api , Resource
+from werkzeug.utils import redirect
 
 
 app = Flask(__name__)
 api = Api(app)
 
+@app.route("/")
+def bkl_website():
+    return redirect("https://gonekrabbing.supply/logistics/" , code=301)
 
+@app.route("/docs")
+def github():
+    return redirect("https://github.com/nonedead/bkl-api" , code=301)
+    
 class Restrictions(Resource):
     def get(self):
         cargo_limit = 340000
