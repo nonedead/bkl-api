@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask , render_template
 from flask_restful import Api , Resource
 from werkzeug.utils import redirect
 
@@ -13,6 +13,10 @@ def bkl_website():
 @app.route("/api/docs")
 def github():
     return redirect("https://github.com/nonedead/bkl-api" , code=301)
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
 
 class Restrictions(Resource):
     def get(self):
